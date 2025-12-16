@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bkumardec16 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bkumardec16
+  template:
+    metadata:
+      labels:
+        app: bkumardec16 
+    spec:
+      containers:
+        - name: bkumardec16 
+          image: kumarcontregnew1.azurecr.io/bkumardec16
+          ports:
+          - containerPort: 80
